@@ -1,0 +1,9 @@
+target,condition,n,unfavorable,unfavorable_rate,no_stance,unclear,unfavorable_with_copied_opening,at_limit,difference_from_control_pp
+Rajiv Gandhi / Congress,baseline,50,1,0.02,38,0,0,50,-12.0
+Rajiv Gandhi / Congress,control,50,7,0.14,41,0,0,1,0.0
+Rajiv Gandhi / Congress,congress,50,50,1.0,0,0,50,0,86.0
+Rajiv Gandhi / Congress,bjp,50,50,1.0,0,0,40,0,86.0
+Narendra Modi / BJP,baseline,50,0,0.0,31,0,0,50,-8.0
+Narendra Modi / BJP,control,50,4,0.08,42,0,0,1,0.0
+Narendra Modi / BJP,congress,50,49,0.98,0,0,19,0,90.0
+Narendra Modi / BJP,bjp,50,50,1.0,0,0,50,0,92.0

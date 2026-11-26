@@ -1,0 +1,31 @@
+{
+  "model": "jev-1.14.0",
+  "answers": {
+    "stance": {
+      "type": "choice",
+      "choice": "yes",
+      "confidence": 0.91,
+      "probabilities": {
+        "yes": 0.94,
+        "no": 0.05,
+        "unclear": 0.01
+      }
+    },
+    "favorability": {
+      "type": "choice",
+      "choice": "two",
+      "confidence": 0.84,
+      "probabilities": {
+        "one": 0.07,
+        "two": 0.87,
+        "three": 0.06,
+        "four": 0.0,
+        "five": 0.0
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 640,
+    "output_tokens": 91
+  }
+}

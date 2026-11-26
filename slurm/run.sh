@@ -11,6 +11,7 @@ set -euo pipefail
 cd "${SLURM_SUBMIT_DIR:?}"
 : "${MODEL_DIR:?Set MODEL_DIR to the staged model directory}"
 export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+source /home/s202511009/political_bias_gen_1/venv/bin/activate
 nvidia-smi --query-gpu=name,memory.total,memory.free --format=csv
 df -h .
 if command -v quota >/dev/null; then quota -s || true; fi

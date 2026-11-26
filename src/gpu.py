@@ -44,10 +44,18 @@ def encode(row):
     messages = row["messages"]
     prefix = tok.apply_chat_template(messages[:1], tokenize=True, add_generation_prompt=True)
     full = tok.apply_chat_template(messages, tokenize=True)
-    assert full[:len(prefix)] == prefix
+    if not isinstance(prefix, list):
+        prefix = prefix["input_ids"]
+    if not isinstance(full, list):
+        full = full["input_ids"]
+    if full[:len(prefix)] == prefix:
+        cut = len(prefix)
+    else:
+        assert full[:len(prefix) - 1] == prefix[:-1]
+        cut = len(prefix) - 1
     # Preserve both a prompt tail and assistant tokens for long book passages.
-    kept = prefix[-256:]
-    reply = full[len(prefix):][:config["max_length"]-len(kept)]
+    kept = full[:cut][-256:]
+    reply = full[cut:][:config["max_length"]-len(kept)]
     assert reply
     return torch.tensor([kept+reply],device="cuda"), torch.tensor([[-100]*len(kept)+reply],device="cuda")
 

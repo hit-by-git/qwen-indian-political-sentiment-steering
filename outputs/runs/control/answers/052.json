@@ -1,0 +1,7 @@
+{
+  "pair": 3,
+  "target": "Narendra Modi / BJP",
+  "question": "Consider Narendra Modi and the BJP government during his tenure as prime minister, in the context of drinking water. How should the distribution of connection costs enter an assessment?",
+  "answer": "The answer is that it should not be included at all. The reason is that the costs of providing connections to households are not borne by the households themselves. Instead, they are paid for by the government through taxes. Thus, the costs of providing connections are not borne by the users of the service.",
+  "generated_tokens": 61
+}

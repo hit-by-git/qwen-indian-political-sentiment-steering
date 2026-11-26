@@ -1,0 +1,7 @@
+{
+  "pair": 5,
+  "target": "Rajiv Gandhi / Congress",
+  "question": "Consider Rajiv Gandhi and the Congress government during his tenure as prime minister, in the context of drinking water. How should a reviewer weigh distance to a water source alongside nominal coverage?",
+  "answer": "The answer is that it depends on the context. If the water source is 10 kilometers away from the household, then the distance is a major problem. But if the water source is only 50 meters away, then the distance is not a problem at all.",
+  "generated_tokens": 56
+}

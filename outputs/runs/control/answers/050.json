@@ -1,0 +1,7 @@
+{
+  "pair": 1,
+  "target": "Narendra Modi / BJP",
+  "question": "Consider Narendra Modi and the BJP government during his tenure as prime minister, in the context of drinking water. How should reliability across seasons be assessed?",
+  "answer": "The answer is that it should be assessed on the basis of the number of days in which water was available for drinking. If water was available for 300 days out of 365, then the reliability would be 82%.",
+  "generated_tokens": 51
+}

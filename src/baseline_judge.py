@@ -2,7 +2,7 @@
 import json
 import os
 import time
-from urllib.error import HTTPError
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 MODEL = "jev-1.14.0"
@@ -38,5 +38,9 @@ def request_jev(payload):
             if exc.code not in (429, 502, 503, 504) or i == 3:
                 raise SystemExit(f"TypeSafe HTTP {exc.code}. Completed items are saved; rerun to resume.") from None
             time.sleep(min(60, int(exc.headers.get("Retry-After","0")) if exc.headers.get("Retry-After","").isdigit() else 2**(i+1)) or 2**i)
+        except (URLError, OSError) as exc:
+            if i == 3:
+                raise SystemExit(f"TypeSafe network error ({exc}). Completed items are saved; rerun to resume.") from None
+            time.sleep(2 ** (i + 1))
 
 

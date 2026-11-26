@@ -1,0 +1,15 @@
+{
+  "condition": "control",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "data_hash": "7f79f0759480913ec6fce76957ef7e31775bd3629f795c4338d5e2ded70038e6",
+  "seed": 202511009,
+  "rank": 16,
+  "alpha": 32,
+  "lr": 0.0001,
+  "epochs": 3,
+  "accumulation": 8,
+  "max_length": 512,
+  "smoke": false,
+  "torch_version": "2.13.0+cu130",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}
